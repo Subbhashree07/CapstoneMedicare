@@ -81,7 +81,7 @@ public class Purchasemedicine {
 		//Assert.assertTrue(driver.getPageSource().contains("Your Order is confirmed!!"));
 		String orderconfirmedmsg = driver.findElement(By.xpath("//h3[normalize-space()='Your Order is Confirmed!!']")).getText();
 		assertEquals(confirmationmsg, orderconfirmedmsg);
-		System.out.println("Paracetomal medicine is successfully ordered");
+		System.out.println("Order is successfully placed");
 	}
 	
 	//Clicks on Continue shopping 
@@ -91,9 +91,9 @@ public class Purchasemedicine {
 		ordermedicine.continueshopping();
 	}
 	
-	//Adds Paracetomal and Amoxicillin items(2 items) to cart
+	//Adds Combiflame and Amoxicillin items(2 items) to cart
 	@When("user clicks on add to cart for Combiflame and Amoxicillin items")
-	public void user_clicks_on_add_to_cart_for_Paracetomal_and_Amoxicillin_items() throws InterruptedException
+	public void user_clicks_on_add_to_cart_for_Combiflame_and_Amoxicillin_items() throws InterruptedException
 	{
 		ordermedicine.addItem1tocart();
 		Thread.sleep(1000);
