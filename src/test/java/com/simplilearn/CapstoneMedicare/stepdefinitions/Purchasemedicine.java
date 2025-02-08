@@ -99,5 +99,6 @@ public class Purchasemedicine {
 		Thread.sleep(1000);
 		ordermedicine.continueshopping();
 		ordermedicine.addItem2tocart();
+		Thread.sleep(1000);
 	}
 }
